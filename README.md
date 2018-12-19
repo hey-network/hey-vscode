@@ -2,6 +2,10 @@
 
 Hey allows you to ask code-related questions by selecting code right from your IDE.
 
+## Install
+
+https://marketplace.visualstudio.com/items?itemName=nab.hey
+
 ## Features
 
 Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
