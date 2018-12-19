@@ -4,7 +4,7 @@
     "publisher": "nab",
     "icon": "icon/icon256.png",
     "description": "Ask code-realted questions right from your IDE.",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.30.0"
     },
