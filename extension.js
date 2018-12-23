@@ -5,7 +5,7 @@ var editor = vscode.window.activeTextEditor;
 var rp = require("request-promise");
 
 function PostQuestion(_question, _code) {
-    vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://ide.hey.network/post?q='+_question+'c='+_code));
+    // vscode.commands.executeCommand('vscode.open', vscode.Uri.parse('https://ide.hey.network/post?q='+_question+'c='+_code));
 }
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -25,6 +25,9 @@ function activate(context) {
         }
         var selection = editor.selection;
         var text = editor.document.getText(selection);
+
+        var text_language = editor.document.languageId;
+        vscode.window.showInformationMessage('Language :'+text_language);
 
         // User Input to ask the question
         vscode.window.showInputBox({
