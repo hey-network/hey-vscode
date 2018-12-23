@@ -5,8 +5,38 @@ var CONFIG = require('./config')._;
 var editor = vscode.window.activeTextEditor;
 var rp = require("request-promise");
 
-function PostQuestion(_question, _code) {
-    vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(CONFIG.api_path+'?q='+_question+'c='+_code));
+function PostQuestion(_question, _code, _language) {
+
+    console.log('posting questions');
+
+    var options = {
+        method: "POST",
+        uri: CONFIG.api_path,
+        headers: {},
+        body: {
+            "content": _question,
+            "categories": [_language], 
+            "snippet": {
+                "content": _code,
+                "language": _language
+            }
+        },
+        json: true
+    };
+
+    rp(options).then(function(r) {
+        // var parsedUrl = vscode.Uri.parse(r.html_url);
+        console.log(r.result);
+        if(r.success && r.result){
+            vscode.window.showInformationMessage(CONFIG.txt.hey_callback_message + r.result);
+            vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(CONFIG.app_path+'/'+r.result));
+        }
+        else {
+            vscode.window.showInformationMessage('😅 Something went wrong.. you can still post your question here (sorry) : https://ide.hey.network');
+        }
+    });
+
+    
 }
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
@@ -19,11 +49,6 @@ function activate(context) {
         if (!editor) {
             return; // No open text editor
         }
-        var selection = editor.selection;
-        var text = editor.document.getText(selection);
-
-        var text_language = editor.document.languageId;
-        vscode.window.showInformationMessage('Language :'+text_language);
 
         // User Input to ask the question
         vscode.window.showInputBox({
@@ -32,8 +57,7 @@ function activate(context) {
             prompt: CONFIG.txt.input_box_prompt
         }).then(function(_userInput){
             // Display a message box to the user
-            vscode.window.showInformationMessage(CONFIG.txt.hey_callback_message + _userInput);
-            PostQuestion(_userInput, text);
+            PostQuestion(_userInput, editor.document.getText(editor.selection), editor.document.languageId);
         });
 
     });
