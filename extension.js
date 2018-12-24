@@ -28,7 +28,7 @@ function PostQuestion(_question, _code, _language) {
         // var parsedUrl = vscode.Uri.parse(r.html_url);
         console.log(r.result);
         if(r.success && r.result){
-            vscode.window.showInformationMessage(CONFIG.txt.hey_callback_message + r.result);
+            vscode.window.showInformationMessage(CONFIG.txt.hey_callback_message + CONFIG.app_path+'/'+ r.result);
             vscode.commands.executeCommand('vscode.open', vscode.Uri.parse(CONFIG.app_path+'/'+r.result));
         }
         else {
