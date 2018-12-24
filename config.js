@@ -1,7 +1,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 
 exports._ = {
-    app_path: 'https://ide.hey.network/e',
+    app_path: 'https://ide.hey.network/c',
     api_path: 'https://api2.get-hey.com/v1/ide',
     txt: {
         input_box_placeholder: 'Ask your question here',
