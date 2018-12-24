@@ -7,5 +7,7 @@
             "es6"
         ]
     },
-    "exclude": []
+    "exclude": [
+        "node_modules"
+    ]
 }
