@@ -7,8 +7,14 @@
     },
     "icon": "icon/icon256.png",
     "description": "Ask code-related questions right from your IDE. Share code snippets and find help the fastest way possible.",
-    "keywords": ["snippet", "share", "help", "context", "community"],
-    "version": "0.1.6",
+    "keywords": [
+        "snippet",
+        "share",
+        "help",
+        "context",
+        "community"
+    ],
+    "version": "0.1.7",
     "license": "UNLICENSED",
     "qna": "https://t.me/heysociety",
     "repository": {
@@ -19,7 +25,8 @@
         "vscode": "^1.30.0"
     },
     "categories": [
-        "Debuggers", "Extension Packs"
+        "Debuggers",
+        "Extension Packs"
     ],
     "activationEvents": [
         "onCommand:extension.sayHey"
