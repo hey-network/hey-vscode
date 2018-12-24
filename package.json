@@ -4,7 +4,7 @@
     "publisher": "nab",
     "icon": "icon/icon256.png",
     "description": "Ask code-realted questions right from your IDE.",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "repository": "https://github.com/nbstr/hey-vscode",
     "engines": {
         "vscode": "^1.30.0"
