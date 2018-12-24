@@ -2,7 +2,7 @@
     "name": "hey",
     "displayName": "hey",
     "publisher": "nab",
-    "icon": "https://raw.githubusercontent.com/nbstr/hey-vscode/master/icon/icon256.png",
+    "icon": "icon/icon256.png",
     "description": "Ask code-realted questions right from your IDE.",
     "version": "0.1.3",
     "repository": "https://github.com/nbstr/hey-vscode",
