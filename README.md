@@ -4,7 +4,7 @@ Hey allows you to ask code-related questions by selecting code right from your I
 
 ## Install
 
-https://marketplace.visualstudio.com/items?itemName=nab.hey
+https://marketplace.visualstudio.com/items?itemName=hey.vscode
 
 ## Requirements
 
