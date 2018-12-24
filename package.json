@@ -5,7 +5,10 @@
     "icon": "icon/icon256.png",
     "description": "Ask code-realted questions right from your IDE.",
     "version": "0.1.4",
-    "repository": "https://github.com/nbstr/hey-vscode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nbstr/hey-vscode.git"
+    },
     "engines": {
         "vscode": "^1.30.0"
     },
