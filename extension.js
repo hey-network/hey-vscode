@@ -56,8 +56,10 @@ function activate(context) {
             placeHolder: CONFIG.txt.input_box_placeholder,
             prompt: CONFIG.txt.input_box_prompt
         }).then(function(_userInput){
-            // Display a message box to the user
-            PostQuestion(_userInput, editor.document.getText(editor.selection), editor.document.languageId);
+            if(_userInput){
+                // Display a message box to the user
+                PostQuestion(_userInput, editor.document.getText(editor.selection), editor.document.languageId);
+            }
         });
 
     });
