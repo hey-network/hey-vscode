@@ -1,11 +1,16 @@
 {
     "name": "hey",
-    "displayName": "hey",
+    "displayName": "Hey",
     "publisher": "nab",
+    "author": {
+        "name": "Nabil Kamel"
+    },
     "icon": "icon/icon256.png",
-    "description": "Ask code-realted questions right from your IDE.",
+    "description": "Ask code-related questions right from your IDE. Share code snippets and find help the fastest way possible.",
+    "keywords": ["snippet", "share", "help", "context", "community"],
     "version": "0.1.6",
     "license": "UNLICENSED",
+    "qna": "https://t.me/heysociety",
     "repository": {
         "type": "git",
         "url": "https://github.com/nbstr/hey-vscode.git"
@@ -14,7 +19,7 @@
         "vscode": "^1.30.0"
     },
     "categories": [
-        "Other"
+        "Debuggers", "Extension Packs"
     ],
     "activationEvents": [
         "onCommand:extension.sayHey"
