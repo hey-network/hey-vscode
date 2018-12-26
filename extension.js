@@ -11,7 +11,7 @@ var rp = require("request-promise");
 // ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
 //  ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝ 
 var CONFIG = {
-    app_path: 'https://ide.hey.network/c',
+    app_path: 'https://ide.hey.network/p',
     api_path: 'https://api2.get-hey.com/v1/ide',
     txt: {
         input_box_placeholder: 'Ask your question here',
