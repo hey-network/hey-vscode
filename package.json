@@ -14,8 +14,8 @@
         "context",
         "community"
     ],
-    "version": "1.0.1",
-    "license": "UNLICENSED",
+    "version": "0.1.11",
+    "license": "MIT",
     "qna": "https://t.me/heysociety",
     "repository": {
         "type": "git",
