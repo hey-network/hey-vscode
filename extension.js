@@ -36,7 +36,6 @@ var CONFIG = {
 function PostQuestion(_question, _code, _language) {
 
     console.log('posting questions');
-
     var options = {
         method: "POST",
         uri: CONFIG.api_path,
@@ -63,8 +62,6 @@ function PostQuestion(_question, _code, _language) {
             vscode.window.showInformationMessage('😅 Something went wrong.. you can still post your question here (sorry) : https://ide.hey.network');
         }
     });
-
-    
 }
 
 //  █████╗  ██████╗████████╗██╗██╗   ██╗ █████╗ ████████╗███████╗
