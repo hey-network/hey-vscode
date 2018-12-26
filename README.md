@@ -20,6 +20,7 @@ Atom: https://atom.io/packages/hey
 ## Join the community
 
 Want to contribute, help or ask questions?
+
 https://t.me/heysociety
 
 ## Read more about the project
