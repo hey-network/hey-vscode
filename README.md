@@ -17,6 +17,8 @@ Visual Studio Code: https://marketplace.visualstudio.com/items?itemName=hey.vsco
 
 Atom: https://atom.io/packages/hey
 
+Chrome: https://chrome.hey.network
+
 ## Join the community
 
 Want to contribute, help or ask questions?
